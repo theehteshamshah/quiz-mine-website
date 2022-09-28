@@ -11,7 +11,7 @@ function LoginForm() {
     return (
         <form>
             <h1>Login</h1>
-            <p>Welcome to Login </p>
+             <p>Welcome to Login </p>
 
             <div className="input-container">
                 <label htmlFor="email">Email</label>
