@@ -7,11 +7,11 @@ import RegisterForm from "./components/RegisterForm";
 function App() {
   return (
     <div>
-      <Link to={/login}>Log in</Link>
-      <Routes>
-        <Route path="/login" element={<LoginForm />}></Route>
-        <Route path="/Register" element={<RegisterForm />}></Route>
-      </Routes>
+      <Link to="/login">Log in</Link >
+        <Routes>
+          <Route path="/login" element={<LoginForm />}></Route>
+          <Route path="/Register" element={<RegisterForm />}></Route>
+        </Routes>
     </div>
   );
 }
