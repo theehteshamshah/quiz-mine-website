@@ -1,0 +1,9 @@
+.show-mcqs{
+    background-color: yellow;
+    display: block;
+    margin: 20px auto;
+    border:  2px solid black;
+    border-radius: 10px;
+    padding: 2rem 3rem;
+
+}
