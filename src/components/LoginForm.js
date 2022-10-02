@@ -9,13 +9,13 @@ function LoginForm() {
         <div className="main-container">
 
             <div className="left-container">
-                <img src="/picture-1.jpg" className="image-login" alt="quiz-mine" />
+                <img src="/pic-1.jpg" className="image-login" alt="quiz-mine" />
 
             </div>
 
         <div className="right-container" >
             <form className="input-field" >
-               <h1>Login</h1>
+               <h1 className="heading-1">Quiz Mine</h1>
                <p>Welcome to Login </p>
 
                 <div className="input-section">
