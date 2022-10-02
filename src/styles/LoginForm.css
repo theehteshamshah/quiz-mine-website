@@ -27,11 +27,12 @@
 
 .heading-1 {
     font-size: 50px;
-    margin-bottom: 8px;
+    margin: 0;
 }
 
-.right-container p {
-    margin-bottom: 35px;
+.right-container h2 {
+    margin-bottom: 20px;
+    font-size: 20px;
 }
 
 
@@ -44,42 +45,29 @@
 }
 
 
-.input-email {
-    width: 14vw;
-    height: 3vh;
+.input-email, .input-password, .input-confirm-password, .first-name, .last-name, .dropdown-register-classes {
     margin-bottom: 10px;
     border-color: rebeccapurple;
     border-radius: 5px;
     font-size: 20px;
-}
-.input-password {
-    width: 14vw;
-    height: 3vh;
-    margin-bottom: 20px;
-    border-color: rebeccapurple;
-    border-radius: 5px;
+    padding: 5px 10px;
+    
 }
 
-.button-login {
-    width: 9vw;
-    border: 1px solid #b9b5b5;
-    background-color: var(--button-color);
-    color: var(--primary-color);
-    height: 3vh;
-    border-radius: 8px;
-    cursor: pointer;
-    margin-bottom: 10px;
-    font-size: 15px;
-}
 
-.button-sign-up {
-    width: 9vw;
+.button-sign-up, .button-login {
+    color: white;
     border: 1px solid #b9b5b5;
     background-color: var(--button-color);
-    height: 3vh;
-    color: var(--primary-color);
+    color: var(--headline-color);
     border-radius: 8px;
     cursor: pointer;
-    font-size: 15px;
+    font-size: 20px;
+    padding: 5px 15px;
+    width: 40%;
+    margin: 5px auto
+}
+.button-login:hover, .button-sign-up:hover{
+    opacity: 0.85;
 } 
 

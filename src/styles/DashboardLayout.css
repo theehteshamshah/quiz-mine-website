@@ -1,0 +1,10 @@
+.content-container{
+    display: flex;
+    background-color: var(secondary-color);
+}
+.content{
+    padding: 25px 30px;
+    height: calc(100vh - 70px);
+    overflow-y: scroll;
+    width: 100%;    
+}

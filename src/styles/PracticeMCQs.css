@@ -1,0 +1,29 @@
+.practice-mcqs-content{
+    display: flex;
+    flex-direction: column;
+    background-color: red;
+    width: 100%;
+}
+.classes-dropdown, .subjects-dropdown, .chapters-dropdown{
+    font-size: larger;
+    padding: 5px 10px;
+    border: 1px solid blue;
+    border-radius: 5px;
+    margin: 10px 60px;
+    width: 25%;
+}
+.input-container label{
+    font-size: larger;
+    margin: 10px 60px;
+
+}
+.input-container input{
+    font-size: larger;
+    padding: 5px 10px;
+    border: 1px solid blue;
+    border-radius: 5px;
+    margin: 10px 60px;
+}
+.input-container button{
+    background-color: aqua;
+}

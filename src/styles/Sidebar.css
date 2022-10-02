@@ -1,0 +1,32 @@
+aside{
+    background-color: var(--primary-color);
+    width: 15%;
+    height: calc(100vh - 62px);
+    padding: 20px 30px;
+
+}
+aside p{
+    text-align: center;
+    margin-bottom: 0.5rem;
+    font-size: 1.4rem;
+}
+aside hr{
+    margin-bottom: 0.5rem;
+}
+aside li a{
+    font-size: 1.2rem;
+    border-radius: 4px;
+    border-collapse: separate;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: var(--text-color);
+    padding-left: 5px;
+    margin-bottom: 10px;
+}
+aside a:hover{
+    background-color: var(--bg-color);
+    color: var(--primary-color);
+    opacity: 80%;
+    cursor: pointer;
+}
