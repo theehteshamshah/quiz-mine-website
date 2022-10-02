@@ -5,6 +5,13 @@ body {
 :root {
   --primary-font: 'Poppins', sans-serif;
   --secondary-font: 'Poppins', sans-serif;
+  --bg-color: #004643;
+  --primary-color: #abd1c6;
+  --side-color: #f9bc60;
+  --headline-color: #fffffe;
+  --secondary-color: #abd1c6;
+  --button-color: #001e1d;
+  --ternary-color: #e16162;
 }
 
 * {
@@ -15,6 +22,11 @@ h1, h2, h3, h4, h5, h6 {
   font-family: var(--secondary-font);
 }
 
+p {
+  font-family: var(--primary-font);
+}
+
 a {
   text-decoration: none;
 }
+@import "./styles/LoginForm.css";
