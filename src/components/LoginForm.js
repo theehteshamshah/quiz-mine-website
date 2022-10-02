@@ -1,9 +1,12 @@
 import { useState} from "react";
+import { useNavigate } from "react-router-dom";
+
 
 function LoginForm() {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
 
+ 
 
     return (
         <div className="main-container">
@@ -14,22 +17,27 @@ function LoginForm() {
             </div>
 
         <div className="right-container" >
-            <form className="input-field" >
-               <h1 className="heading-1">Quiz Mine</h1>
+            <form className="input-field">
+               <h1 className="heading-1"> <span class="material-symbols-sharp">new_releases</span> Quiz Mine</h1>
                <p>Welcome to Login </p>
 
                 <div className="input-section">
-                  <label htmlFor="email">Email</label>
+                  <label htmlFor="email"><i class="material-symbols-sharp">mail</i>  Email</label>
+                  
                   <input className="input-email" type="email" id="email" name="email" value={email} onChange={(e) => setEmail(e.target.value)} required />
                   </div>
 
                   <div className="input-section">
-                  <label htmlFor="password">Password</label>
-                  <input className="input-password" type="password" id="password" name="password" value={password} onChange={(e) => setEmail(e.target.value)} required />
+                  <label htmlFor="password"><i class="material-symbols-sharp">lock</i>  Password</label>
+                  
+                  <input className="input-password" type="password" id="password" name="password" value={password} onChange={(e) => setPassword(e.target.value)} required />
                 </div>
-
+                
                 <button className="button-login" type="submit">Login</button>
                 <button className="button-sign-up" type="submit" >Sign up</button>
+                <br/>
+
+                
 
                 
             </form>
