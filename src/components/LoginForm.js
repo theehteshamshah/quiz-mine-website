@@ -1,6 +1,9 @@
+
 import { useState } from "react";
 import { Navigate, useNavigate } from "react-router-dom";
 import toast, { Toaster } from "react-hot-toast";
+
+
 
 function LoginForm() {
   const [email, setEmail] = useState("");
@@ -23,6 +26,7 @@ function LoginForm() {
   const handleSignUp = () => {
     navigate("/register");
   };
+
 
   return (
     <div className="main-container">
@@ -49,6 +53,7 @@ function LoginForm() {
             />
           </div>
 
+
           <div className="input-section">
             <label htmlFor="password">Password</label>
             <input
@@ -73,6 +78,7 @@ function LoginForm() {
       </div>
     </div>
   );
+
 }
 
 export default LoginForm;
