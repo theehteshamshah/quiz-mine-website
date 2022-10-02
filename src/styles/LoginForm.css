@@ -1,4 +1,3 @@
-
 .main-container{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -12,6 +11,10 @@
     justify-content: center;
     height: 85vh;
     font-family: sans-serif;
+}
+
+.input-section i {
+
 }
 
 .image-login {
@@ -44,42 +47,33 @@
 }
 
 
-.input-email {
-    width: 14vw;
-    height: 3vh;
+.input-email, .input-password, .input-confirm-password, .first-name, .last-name {
     margin-bottom: 10px;
     border-color: rebeccapurple;
     border-radius: 5px;
     font-size: 20px;
-}
-.input-password {
-    width: 14vw;
-    height: 3vh;
-    margin-bottom: 20px;
-    border-color: rebeccapurple;
-    border-radius: 5px;
+    padding: 5px 10px;
+    width: 12.4vw;
 }
 
-.button-login {
-    width: 9vw;
+
+.button-sign-up, .button-login {
+    color: white;
     border: 1px solid #b9b5b5;
     background-color: var(--button-color);
-    color: var(--primary-color);
-    height: 3vh;
+    color: var(--headline-color);
     border-radius: 8px;
     cursor: pointer;
-    margin-bottom: 10px;
-    font-size: 15px;
+    font-size: 20px;
+    padding: 5px 15px;
+    width: 25%;
+    margin-bottom: 8px;
+}
+.button-login:hover, .button-sign-up:hover{
+    opacity: 0.85;
 }
 
-.button-sign-up {
-    width: 9vw;
-    border: 1px solid #b9b5b5;
-    background-color: var(--button-color);
-    height: 3vh;
-    color: var(--primary-color);
-    border-radius: 8px;
-    cursor: pointer;
-    font-size: 15px;
-} 
-
+.heading-1 .material-symbols-sharp {
+    font-size: 40px;
+    color: blue;
+}
