@@ -1,10 +1,20 @@
 body {
   margin: 0;
+  padding: 0;
 }
 
 :root {
   --primary-font: 'Poppins', sans-serif;
   --secondary-font: 'Poppins', sans-serif;
+  --bg-color: #16161a;
+  --primary-color: #010101;
+  --side-color: #7f5af0;
+  --headline-color: #fffffe;
+  --secondary-color: #72757e;
+  --button-color: #7f5af0;
+  --button-text: #7f5af0;
+  --ternary-color: #2cb67d;
+  --paragraph-color: #94a1b2;
 }
 
 * {
@@ -13,8 +23,15 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--secondary-font);
+  color: var(--primary-color);
+}
+
+p {
+  font-family: var(--primary-font);
+  color: var(--paragraph-color);
 }
 
 a {
   text-decoration: none;
 }
+@import "./styles/LoginForm.css";
