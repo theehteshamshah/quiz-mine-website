@@ -62,13 +62,14 @@ function LoginForm() {
               placeholder="Enter Your Password"
             />
           </div>
-
-          <button className="button-login" type="submit">
-            Login
-          </button>
-          <button className="button-sign-up" onClick={handleSignUp}>
-            Create Account
-          </button>
+          <div className="input-section">
+            <button className="button-login" type="submit">
+              Login
+            </button>
+            <button className="button-sign-up" onClick={handleSignUp}>
+              Create Account
+            </button>
+          </div>
         </form>
       </div>
     </div>

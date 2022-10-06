@@ -126,5 +126,84 @@ export const MCQs = [
         optionC: "power",
         optionD: "density",
     },
+    {
+        id: 1,
+        statement: "The area under velocity-time graph represents:" ,
+        optionA: "distance",
+        optionB: "displacement",
+        optionC: "velocity",
+        optionD: "acceleration",
+    },
+    {
+        id: 2,
+        statement: "The rate of change of momentum is called:",
+        optionA: "displacement",
+        optionB: "velocity",
+        optionC: "acceleration",
+        optionD: "force",
+    },
+    {
+        id: 3,
+        statement: "Dot product of force and velocity equals to:" ,
+        optionA: "momentum",
+        optionB: "work done",
+        optionC: "power",
+        optionD: "density",
+    },
+    {
+        id: 1,
+        statement: "The area under velocity-time graph represents:" ,
+        optionA: "distance",
+        optionB: "displacement",
+        optionC: "velocity",
+        optionD: "acceleration",
+    },
+    {
+        id: 2,
+        statement: "The rate of change of momentum is called:",
+        optionA: "displacement",
+        optionB: "velocity",
+        optionC: "acceleration",
+        optionD: "force",
+    },
+    {
+        id: 3,
+        statement: "Dot product of force and velocity equals to:" ,
+        optionA: "momentum",
+        optionB: "work done",
+        optionC: "power",
+        optionD: "density",
+    },
+    {
+        id: 1,
+        statement: "The area under velocity-time graph represents:" ,
+        optionA: "distance",
+        optionB: "displacement",
+        optionC: "velocity",
+        optionD: "acceleration",
+    },
+    {
+        id: 2,
+        statement: "The rate of change of momentum is called:",
+        optionA: "displacement",
+        optionB: "velocity",
+        optionC: "acceleration",
+        optionD: "force",
+    },
+    {
+        id: 3,
+        statement: "Dot product of force and velocity equals to:" ,
+        optionA: "momentum",
+        optionB: "work done",
+        optionC: "power",
+        optionD: "density",
+    },
 
+
+]
+
+export const dataMCQs =  [
+    [
+
+    ],
 ]

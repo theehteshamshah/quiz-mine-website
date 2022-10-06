@@ -64,7 +64,7 @@ function RegisterForm() {
       <div className="left-container">
         <img src="/pic-1.jpg" className="image-login" alt="quiz-mine" />
       </div>
-      <div className="right-container">
+      <div className="right-container"id="register-container">
         <h1 className="heading-1">Quiz Mine</h1>
         <h2>Create Your Account </h2>
 

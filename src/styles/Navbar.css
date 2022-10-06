@@ -1,55 +1,55 @@
 nav ul {
-    background-color: var(--bg-color);
+    background-color: var(--primary-color);
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 8px;
-    font-size: 18px;
+    padding: 0.8rem;
+    font-size: 1.8rem;
   }
   .navbar-right-links{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 30px;
-    font-size: 18px;
+    gap: 3rem;
+    font-size: 1.8rem;
   }
   nav ul:nth-child(1){
       display: flex;
     align-items: center;
   }
   nav li span {
-    color: var(--primary-color);
+    color: var(--headline-color);
   }
   #search {
     all: unset;
-    font-size: 18px;
-    color: var(--primary-color);
+    font-size: 1.8rem;
+    color: var(--headline-color);
     height: 100%;
     width: 100%;
-    padding: 6px 10px;
+    padding: 0.6rem 1rem;
   }
   #search::placeholder {
-    color: var(--primary-color);
+    color: var(--headline-color);
     opacity: 0.7;
   }
   .search-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px  solid var(--primary-color);
-    border-radius: 8px;
+    border: 1px  solid var(--headline-color);
+    border-radius: 0.8rem;
   }
   button {
     all: unset;
     cursor: pointer;
-    width: 44px;
-    height: 44px;
+    width: 4.4rem;
+    height: 4.4rem;
   }
   
   svg {
     color: #fff;
     fill: currentColor;
-    width: 30px;
-    height: 30px;
+    width: 3rem;
+    height: 3rem;
   }
   

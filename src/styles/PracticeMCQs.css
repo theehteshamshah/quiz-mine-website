@@ -6,24 +6,27 @@
 }
 .classes-dropdown, .subjects-dropdown, .chapters-dropdown{
     font-size: larger;
-    padding: 5px 10px;
-    border: 1px solid blue;
-    border-radius: 5px;
-    margin: 10px 60px;
+    padding: 0.5rem 1rem;
+    border: 2px solid var(--primary-color);
+    border-radius: 0.5rem;
+    margin: 1rem 6rem;
     width: 25%;
 }
 .input-container label{
     font-size: larger;
-    margin: 10px 60px;
+    margin: 1rem 6rem;
 
 }
 .input-container input{
     font-size: larger;
-    padding: 5px 10px;
-    border: 1px solid blue;
-    border-radius: 5px;
-    margin: 10px 60px;
+    padding: 0.5rem 1rem;
+    border: 2px solid var(--primary-color);
+    border-radius: 0.5rem;
+    margin: 1rem 6rem;
 }
 .input-container button{
-    background-color: aqua;
+    background-color: var(--secondary-color);
+    text-align: center;
+    color: var(--headline-color);
+
 }

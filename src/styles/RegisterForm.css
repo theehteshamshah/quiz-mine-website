@@ -1,4 +1,20 @@
 
+.button-sign-up{
+    color: var(--headline-color);
+    border: 1px solid var(--headline-color);
+    background-color: var(--primary-color);
+    color: var(--headline-color);
+    border-radius: .8rem;
+    cursor: pointer;
+    width: 50%;
+    font-size: 2rem;
+    padding: 0.5rem 1rem;
+    margin: 0.5rem auto;
+    text-align: center;
+}
+#register-container{
+    border: none;
+}
 .form-container{
     height: 30%;
 }
@@ -8,9 +24,9 @@
 }
 .form-container{
     display: grid;
-    grid-template-columns: 300px 300px;
+    grid-template-columns: 30rem 30rem;
     grid-template-rows: 1fr 1fr 1fr;
-    column-gap: 20px;
+    column-gap: 2rem;
 }
 .input-section .item11{
     grid-column-start: 1;
