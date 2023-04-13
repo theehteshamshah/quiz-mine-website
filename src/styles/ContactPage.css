@@ -1,0 +1,25 @@
+.contact-page{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.contact-page .left-div img{
+    width: 500px;
+}
+.contact-page-h1{
+    text-align: center;
+}
+.input-field .form-container .contact-page{
+    display: flex;
+    flex: column;
+    gap: 0rem;
+}
+.button-send-message{
+    background-color: var(--primary-color);
+    width: 150%;
+    text-align: center;
+    color: var(--headline-color);
+    font-weight: 500;
+    font-size: 1.5rem;
+    border-radius: 0.5rem;
+}

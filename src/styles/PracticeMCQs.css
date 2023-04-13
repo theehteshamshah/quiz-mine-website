@@ -1,32 +1,38 @@
 .practice-mcqs-content{
     display: flex;
     flex-direction: column;
-    background-color: red;
+    justify-content: center;
+    align-items: center;
     width: 100%;
 }
 .classes-dropdown, .subjects-dropdown, .chapters-dropdown{
+    font-size: 1.5rem;
+    padding: 0.5rem 1rem;
+    border: 2px solid var(--primary-color);
+    border-radius: 0.5rem;
+    margin: 1rem auto;
+    width: 50%;
+}
+.input-container-question{
+    /* background-color: yellow; */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.input-container-question label{
+    color: var(--ternary-color);
+    font-size: 1.5rem;
+}
+.input-container-question input{
     font-size: larger;
     padding: 0.5rem 1rem;
     border: 2px solid var(--primary-color);
     border-radius: 0.5rem;
-    margin: 1rem 6rem;
-    width: 25%;
+    width: 50%;
 }
-.input-container label{
-    font-size: larger;
-    margin: 1rem 6rem;
-
-}
-.input-container input{
-    font-size: larger;
-    padding: 0.5rem 1rem;
-    border: 2px solid var(--primary-color);
-    border-radius: 0.5rem;
-    margin: 1rem 6rem;
-}
-.input-container button{
+.input-container-question button{
     background-color: var(--secondary-color);
     text-align: center;
     color: var(--headline-color);
-
 }

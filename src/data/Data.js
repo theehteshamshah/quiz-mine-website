@@ -33,14 +33,18 @@ export const subjects=[
         chapters: [
             {
                 id: 1,
-                topic: "Measurements"
+                topic: "Select Chapter"
             },
             {
                 id: 2,
-                topic: "Vectors"
+                topic: "Measurements"
             },
             {
                 id: 3,
+                topic: "Vectors"
+            },
+            {
+                id: 4,
                 topic: "Dynamics"
             },
         ]
@@ -51,14 +55,18 @@ export const subjects=[
         chapters: [
             {
                 id: 1,
-                topic: "Atom"
+                topic: "Select Chapter"
             },
             {
                 id: 2,
-                topic: "Techniques"
+                topic: "Atom"
             },
             {
                 id: 3,
+                topic: "Techniques"
+            },
+            {
+                id: 4,
                 topic: "Gases"
             },
         ]
@@ -69,14 +77,18 @@ export const subjects=[
         chapters: [
             {
                 id: 1,
-                topic: "Cell Biology"
+                topic: "Select Chapter"
             },
             {
                 id: 2,
-                topic: "Anatomy"
+                topic: "Cell Biology"
             },
             {
                 id: 3,
+                topic: "Anatomy"
+            },
+            {
+                id: 4,
                 topic: "Reproduction"
             },
         ]
@@ -87,14 +99,18 @@ export const subjects=[
         chapters: [
             {
                 id: 1,
-                topic: "Numbers"
+                topic: "Select Chapter"
             },
             {
                 id: 2,
-                topic: "Matrices"
+                topic: "Numbers"
             },
             {
                 id: 3,
+                topic: "Matrices"
+            },
+            {
+                id: 4,
                 topic: "Trigonometry"
             },
         ]
@@ -127,7 +143,7 @@ export const MCQs = [
         optionD: "density",
     },
     {
-        id: 1,
+        id: 4,
         statement: "The area under velocity-time graph represents:" ,
         optionA: "distance",
         optionB: "displacement",
@@ -135,7 +151,7 @@ export const MCQs = [
         optionD: "acceleration",
     },
     {
-        id: 2,
+        id: 5,
         statement: "The rate of change of momentum is called:",
         optionA: "displacement",
         optionB: "velocity",
@@ -143,7 +159,7 @@ export const MCQs = [
         optionD: "force",
     },
     {
-        id: 3,
+        id: 6,
         statement: "Dot product of force and velocity equals to:" ,
         optionA: "momentum",
         optionB: "work done",
@@ -151,7 +167,7 @@ export const MCQs = [
         optionD: "density",
     },
     {
-        id: 1,
+        id: 7,
         statement: "The area under velocity-time graph represents:" ,
         optionA: "distance",
         optionB: "displacement",
@@ -159,7 +175,7 @@ export const MCQs = [
         optionD: "acceleration",
     },
     {
-        id: 2,
+        id: 8,
         statement: "The rate of change of momentum is called:",
         optionA: "displacement",
         optionB: "velocity",
@@ -167,7 +183,7 @@ export const MCQs = [
         optionD: "force",
     },
     {
-        id: 3,
+        id: 9,
         statement: "Dot product of force and velocity equals to:" ,
         optionA: "momentum",
         optionB: "work done",
@@ -175,7 +191,7 @@ export const MCQs = [
         optionD: "density",
     },
     {
-        id: 1,
+        id: 10,
         statement: "The area under velocity-time graph represents:" ,
         optionA: "distance",
         optionB: "displacement",
@@ -183,7 +199,7 @@ export const MCQs = [
         optionD: "acceleration",
     },
     {
-        id: 2,
+        id: 11,
         statement: "The rate of change of momentum is called:",
         optionA: "displacement",
         optionB: "velocity",
@@ -191,7 +207,7 @@ export const MCQs = [
         optionD: "force",
     },
     {
-        id: 3,
+        id: 12,
         statement: "Dot product of force and velocity equals to:" ,
         optionA: "momentum",
         optionB: "work done",

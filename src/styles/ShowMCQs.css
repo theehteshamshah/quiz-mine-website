@@ -1,14 +1,19 @@
 .show-mcqs h3{
     font-size: 2.5rem;
 }
-.show-mcqs  .statement{
+.show-mcqs .statement{
     font-size: 2.5rem;
     margin-bottom: 1.5rem;
+}
+.show-mcqs-container{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .show-mcqs{
     background-color: var(--headline-color);
     display: block;
-    margin: auto;
     border:  2px solid var(--primary-color);
     border-radius: 1rem;
     padding: 2rem 3rem;
@@ -60,9 +65,15 @@ input[type="radio"]:checked + label{
     justify-content: space-around;
 }
 @media(max-width:600px){
+    .show-mcqs-container{
+        height: 70vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
     .show-mcqs{
         width: 90%;
-        margin: 2rem auto;
-        max-height: 30vh !important;
+        margin: auto 2 rem;
+        max-height: 70vh !important;
     }
 }

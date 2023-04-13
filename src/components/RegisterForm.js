@@ -3,7 +3,9 @@ import { useState } from "react";
 import { Navigate, NavLink, useNavigate } from "react-router-dom";
 import { classes } from "../data/Data";
 import toast from "react-hot-toast";
+import { createAccount } from "../api/AuthenticationApi";
 function RegisterForm() {
+  const [className, setClassName] = useState("");
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
   const [email, setEmail] = useState("");
@@ -12,15 +14,13 @@ function RegisterForm() {
   const [isError, setIsError] = useState(true);
   const navigate = useNavigate();
 
-  const handleSubmit = (e) => {
+ 
+
+  const handleSubmit = async (e) => {
     e.preventDefault();
     const firstNameLength = firstName.length;
     const lastNameLength = lastName.length;
-    console.log(firstNameLength);
-    console.log(lastNameLength);
-    console.log(email);
-    console.log(password);
-    console.log(confirmPassword);
+   
     if (firstNameLength < 3) {
       setIsError(false);
       toast.error("First name should contain at-least 3 characters", {
@@ -57,6 +57,24 @@ function RegisterForm() {
         position: "top-center",
       });
     }
+
+    const data = {
+      first_name : firstName,
+      last_name: lastName,
+      password: password,
+      email: email,
+      class: className,
+    }
+    try {
+      const response = await createAccount(data)
+      if(response.ok){
+        const { message, data } = await response.json();
+        toast.success(message)
+        navigate("/login")
+      }
+    } catch (error) {
+      toast.error(error.message)
+    }
   };
 
   return (
@@ -64,7 +82,7 @@ function RegisterForm() {
       <div className="left-container">
         <img src="/pic-1.jpg" className="image-login" alt="quiz-mine" />
       </div>
-      <div className="right-container"id="register-container">
+      <div className="right-container" id="register-container">
         <h1 className="heading-1">Quiz Mine</h1>
         <h2>Create Your Account </h2>
 
@@ -91,7 +109,7 @@ function RegisterForm() {
               onChange={(e) => setLastName(e.target.value)}
             />
           </div>
-          <div className="input-section">
+          <div className="input-section item13">
             <label htmlFor="email">Email</label>
             <input
               className="input-email"
@@ -104,12 +122,13 @@ function RegisterForm() {
               required
             />
           </div>
-          <div className="input-section">
+          <div className="input-section item14">
             <label htmlFor="dropdown-register-classes">Class</label>
             <select
               id="dropdown-register-classes"
               name="dropdown-register-classes"
               className="dropdown-register-classes"
+              onChange = {(e) => setClassName(e.target.value)}
               required
             >
               {classes.map((value, index) => {
@@ -118,7 +137,7 @@ function RegisterForm() {
             </select>
           </div>
 
-          <div className="input-section">
+          <div className="input-section item15">
             <label htmlFor="password">Password</label>
             <input
               className="input-password"
@@ -131,7 +150,7 @@ function RegisterForm() {
               required
             />
           </div>
-          <div className="input-section">
+          <div className="input-section item16">
             <label htmlFor="confirm-password">Confirm Password</label>
             <input
               className="input-confirm-password"

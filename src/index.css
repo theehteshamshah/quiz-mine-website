@@ -4,14 +4,17 @@ body {
 }
 
 :root {
-  --primary-font: 'Poppins', sans-serif;
+  --primary-font: 'Arial', sans-serif;
   --secondary-font: 'Poppins', sans-serif;
   --primary-color: #081466;
   --secondary-color: #ef6f7f;
   --secondary-color-light: #e898a6;
   --headline-color: #f7f7f9;
+  --main-color: #ffffff;  
+  /* Above color is fully white */
   --tertiary-color: #4fc194;
   --ternary-color: #999fbb;
+  --ternary-color-light: rgb(153,159,187, 0.85);
 }
 *{
     box-sizing: border-box;
@@ -23,9 +26,14 @@ h1, h2, h3, h4, h5, h6 {
   color: var(--primary-color);
 }
 
-p {
+p, button,span {
   font-family: var(--primary-font);
-  color: var(--paragraph-color);
+  color: var(--primary-color);
+}
+label{
+  font-family: var(--primary-font);
+  color: var(--primary-color);
+  font-size: 2rem;
 }
 
 a{
@@ -60,3 +68,8 @@ html{
 @import "./styles/Sidebar.css";
 @import "./styles/PracticeMCQs.css";
 @import "./styles/ShowMCQs.css";
+@import "./styles/DashboardContent.css";
+@import "./styles/CheckMarks.css";
+@import "./styles/ResultPage.css";
+@import "./styles/AboutPage.css";
+@import "./styles/ContactPage.css"

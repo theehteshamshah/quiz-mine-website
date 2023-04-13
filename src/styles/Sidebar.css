@@ -1,8 +1,10 @@
 aside{
-    background-color: var(--headline-color);
+    background-color: var(--main-color);
     width: 15%;
-    height: calc(100vh - 6.2rem);
+    height: calc(100vh - 7.5rem);
     padding: 2rem 3rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
 
 }
 aside p{
@@ -13,24 +15,35 @@ aside p{
 aside hr{
     margin-bottom: 0.5rem;
 }
-aside li{
-    font-size: 1.2rem;
-    border-radius: 0.4rem;
-    border-collapse: separate;
+.sidebar-links li{
     display: flex;
     align-items: center;
     gap: .5rem;
-    color: var(--primary-color);
     padding-left: 0.5rem;
     margin-bottom: 1rem;
+    width: 100%;
+}
+.sidebar-links li span{
+    color: var(--primary-color);
+    font-size: 1.8rem;
+
 }
 aside a:hover{
-    background-color: var(--primary-color);
-    color: var(--headline-color);
+    background-color: var(--ternary-color);
+    color: var(--primary-color);
     cursor: pointer;
-    opacity: 90%;
-    border-radius: 1rem;
-    padding: 0.5rem 0.8rem;
+    border-radius: 0.5rem;
+    margin: 0;
+    transition: all .2s ease-in-out;
+}
+.account-profile{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 1.2rem;
+}
+.account-circle{
+    color: var(--primary-color);
 }
 .sidebar-links  li{
     font-size: 2rem;

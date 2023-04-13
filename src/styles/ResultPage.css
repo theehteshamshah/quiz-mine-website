@@ -1,0 +1,62 @@
+.result-container{
+    display: flex;
+    flex-direction: column;
+    margin: 2rem auto;
+}
+.result-card{
+    border:  2px solid var(--primary-color);
+    padding: 2rem;
+    text-align: center;
+    margin: 0 auto;
+    border-radius: 1rem;
+    max-height: 80%;
+}
+.result-card .correct{
+    color: var(--tertiary-color);
+}
+.result-card .wrong{
+    color: var(--secondary-color)
+}
+.result-card .unattempted-p{
+    color: var(--ternary-color)
+}
+.result-card h1{
+    font-size: 3rem;
+}
+.result-card p{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin: 1.5rem 0;
+    font-size: 2.5rem;
+    padding: 0.5rem 0;
+}
+.performance-chart{
+    font-size: 3rem;
+    margin: 1rem 0 0 0;
+}
+.pie-chart{
+    width: 350px;
+    height: 350px;
+    position: relative;
+    /* z-index: -1; */
+    /* background-color: chartreuse; */
+}
+.performance-container{
+    max-height: 70%;
+}
+.again-test-button{
+    background-color: var(--secondary-color);
+    color: var(--headline-color);
+    border-radius: 0.5rem;
+    padding: 0.5rem 1rem;
+    width: 20rem;
+    text-align: center;
+    font-size: 2.5rem;
+}
+@media(min-width:860px){
+    .result-container{
+        display: flex;
+        flex-direction: row;
+        margin: 2rem auto;
+        gap: 3rem
+    }
+}
